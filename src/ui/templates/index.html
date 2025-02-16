@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Network Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Network Dashboard</h1>
+    </header>
+    
+    <main>
+        <section id="node-registration">
+            <h2>Register a Quantum Node</h2>
+            <input type="number" id="node-id" placeholder="Enter Node ID">
+            <button onclick="registerNode()">Register</button>
+        </section>
+
+        <section id="entanglement">
+            <h2>Establish Quantum Entanglement</h2>
+            <input type="number" id="node1" placeholder="Node 1 ID">
+            <input type="number" id="node2" placeholder="Node 2 ID">
+            <button onclick="entangleNodes()">Entangle</button>
+        </section>
+
+        <section id="key-exchange">
+            <h2>Quantum Key Exchange</h2>
+            <input type="number" id="key-node1" placeholder="Node 1 ID">
+            <input type="number" id="key-node2" placeholder="Node 2 ID">
+            <button onclick="exchangeKeys()">Exchange Keys</button>
+        </section>
+
+        <section id="secure-message">
+            <h2>Send Secure Quantum Message</h2>
+            <input type="number" id="sender-id" placeholder="Sender ID">
+            <input type="number" id="receiver-id" placeholder="Receiver ID">
+            <input type="text" id="message-content" placeholder="Enter Message">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+
+        <section id="node-status">
+            <h2>Node Status</h2>
+            <input type="number" id="status-node-id" placeholder="Enter Node ID">
+            <button onclick="getNodeStatus()">Check Status</button>
+            <pre id="status-output"></pre>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
