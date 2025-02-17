@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Network Simulation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quantum Network Simulation</h1>
+        <p>Interact with the quantum network, entangle nodes, and simulate key exchanges.</p>
+    </header>
+
+    <main>
+        <section id="network-visualization">
+            <h2>Quantum Network Overview</h2>
+            <div id="network-container">
+                <p>Network Visualization (Nodes, Entanglements, and Connections)</p>
+                <canvas id="network-canvas" width="600" height="400"></canvas>
+            </div>
+        </section>
+
+        <section id="simulation-controls">
+            <h2>Simulation Controls</h2>
+            <button onclick="simulateEntanglement()">Simulate Entanglement</button>
+            <button onclick="simulateKeyExchange()">Simulate Key Exchange</button>
+        </section>
+
+        <section id="simulation-log">
+            <h2>Simulation Log</h2>
+            <div id="log-container">
+                <pre id="log-output">Waiting for simulation to start...</pre>
+            </div>
+        </section>
+
+        <section id="node-selection">
+            <h2>Select Node for Interaction</h2>
+            <input type="number" id="node-id" placeholder="Enter Node ID">
+            <button onclick="selectNode()">Select Node</button>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
