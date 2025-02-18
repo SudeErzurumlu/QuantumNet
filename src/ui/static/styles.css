@@ -1,0 +1,101 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1f1f1f, #292929);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 28px;
+    color: #00e6e6;
+    text-shadow: 0 0 8px #00e6e6;
+}
+
+/* Sections */
+section {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.3);
+}
+
+/* Buttons */
+button {
+    background: #00e6e6;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00a8a8;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #00e6e6;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+/* Canvas (for network visualization) */
+#network-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#network-canvas {
+    background-color: #252525;
+    border: 2px solid #00e6e6;
+    border-radius: 10px;
+}
+
+/* Simulation Log */
+#log-container {
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00e6e6;
+    text-align: left;
+    height: 150px;
+    overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
